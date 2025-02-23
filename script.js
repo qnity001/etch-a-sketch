@@ -17,6 +17,6 @@ for (let i = 0; i < n; i++){
 const pixels = document.querySelectorAll(".pixel");
 pixels.forEach((pixel) => {
     pixel.addEventListener('click', () => {
-        alert("You pressed it!");
+        pixel.style.backgroundColor = "pink";
     });
 });
