@@ -9,6 +9,31 @@ body {
     font-family: 'Playpen Sans', 'Times New Roman', Arial;
 }
 
+.header-container {
+    font-size: 30px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.header {
+    width: 1000px;
+    align-self: center;
+}
+
+.header-container,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D1001F;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .game-container {
     width: 640px;
     height: 640px;
