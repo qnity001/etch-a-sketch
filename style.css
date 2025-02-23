@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F2F3F5;
+    font-family: 'Playpen Sans', 'Times New Roman', Arial;
+}
+
 .game-container {
     width: 640px;
     height: 640px;
