@@ -13,3 +13,10 @@ for (let i = 0; i < n; i++){
         gameContainer.appendChild(div);
     }
 }
+
+const pixels = document.querySelectorAll(".pixel");
+pixels.forEach((pixel) => {
+    pixel.addEventListener('click', () => {
+        alert("You pressed it!");
+    });
+});
