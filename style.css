@@ -21,6 +21,12 @@ body {
     font-weight: bold;
 }
 
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -56,3 +62,68 @@ body {
     justify-content: center;
     align-self: center;
 }
+
+.choose-colour {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.color {
+    height: 90px;
+    width: 90px;
+}
+
+.white {
+    border-radius: 15px;
+    background-color: white;
+}
+.black {
+    border-radius: 15px;
+    background-color: black;
+}
+.brown {
+    border-radius: 15px;
+    background-color: brown;
+}
+.purple {
+    border-radius: 15px;
+    background-color: #4C00B0;
+}
+.dark-blue {
+    border-radius: 15px;
+    background-color: #00008B;
+}
+.light-blue {
+    border-radius: 15px;
+    background-color: lightblue;
+}
+.dark-green {
+    border-radius: 15px;
+    background-color: green;
+}
+.light-green {
+    border-radius: 15px;
+    background-color: lightgreen;
+}
+.orange {
+    border-radius: 15px;
+    background-color: orange;
+}
+.yellow {
+    border-radius: 15px;
+    background-color: yellow;
+}
+.red {
+    border-radius: 15px;
+    background-color: #D1001F;
+}
+.pink {
+    border-radius: 15px;
+    background-color: pink;
+}
+
