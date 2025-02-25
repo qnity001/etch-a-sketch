@@ -1,5 +1,4 @@
-//  Create a matrix of 16 x 16
-n = 30
+let n = getUserChoice();
 const size = 640 / n;
 
 // Go into the game-container div
@@ -27,3 +26,28 @@ pixels.forEach((pixel) => {
         pixel.style.backgroundColor = "pink";
     });
 });
+
+const resize = document.querySelector(".resize");
+resize.addEventListener("click", () => {
+    location.reload();
+});
+
+
+function getUserChoice() {
+    let n = Number(prompt("Please enter size of canvas"));
+    if (n > 100) {
+        alert("Please enter size less than 100");
+        return 16;
+    }
+    else if (n < 1) {
+        alert("Please enter a positive number");
+        return 16;
+    }
+    else if (n == NaN) {
+        alert("Please enter a valid number");
+        return 16;
+    }
+    else {
+        return n;
+    }
+}
