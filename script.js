@@ -23,8 +23,6 @@ for (let i = 0; i < n; i++){
 const pixels = document.querySelectorAll(".pixel");
 pixels.forEach((pixel) => {
     let color = "";
-    color = getColor();
-    /*
     const white = document.querySelector(".white");
     white.addEventListener("click", () => {
         color = "white";
@@ -73,7 +71,7 @@ pixels.forEach((pixel) => {
     pink.addEventListener("click", () => {
         color = "pink";
     });
-*/
+
     pixel.addEventListener('mouseover', () => {
         pixel.style.backgroundColor = color;
     });
@@ -104,57 +102,4 @@ function getUserChoice() {
     else {
         return n;
     }
-}
-
-function getColor() {
-    
-    const white = document.querySelector(".white");
-    white.addEventListener("click", () => {
-        return "white";
-    });
-    const black = document.querySelector(".black");
-    black.addEventListener("click", () => {
-        return "black";
-    });
-    const brown = document.querySelector(".brown");
-    brown.addEventListener("click", () => {
-        return "brown";
-    });
-    const purple = document.querySelector(".purple");
-    purple.addEventListener("click", () => {
-        return "#4C00B0";
-    });
-    const darkBlue = document.querySelector(".dark-blue");
-    darkBlue.addEventListener("click", () => {
-        return "#00008B";
-    });
-    const lightBlue = document.querySelector(".light-blue");
-    lightBlue.addEventListener("click", () => {
-        return "lightblue";
-    });
-    const green = document.querySelector(".dark-green");
-    green.addEventListener("click", () => {
-        return "green";
-    });
-    const lightGreen = document.querySelector(".light-green");
-    lightGreen.addEventListener("click", () => {
-        return "lightgreen";
-    });
-    const orange = document.querySelector(".orange");
-    orange.addEventListener("click", () => {
-        return "orange";
-    });
-    const yellow = document.querySelector(".yellow");
-    yellow.addEventListener("click", () => {
-        return "yellow";
-    });
-    const red = document.querySelector(".red");
-    red.addEventListener("click", () => {
-        return "#D1001F";
-    });
-    const pink = document.querySelector(".pink");
-    pink.addEventListener("click", () => {
-        return "pink";
-    });
-
 }
