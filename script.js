@@ -27,6 +27,13 @@ pixels.forEach((pixel) => {
     });
 });
 
+// For mobile phones
+pixels.forEach((pixel) => {
+    pixel.addEventListener('touchstart', () => {
+        pixel.style.backgroundColor = "pink";
+    });
+});
+
 const resize = document.querySelector(".resize");
 resize.addEventListener("click", () => {
     location.reload();
